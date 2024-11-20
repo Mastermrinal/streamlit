@@ -45,5 +45,3 @@ input_data = pd.DataFrame({
 if st.button("Predict Price"):
     prediction = model.predict(input_data)[0]
     st.success(f"Estimated Selling Price: ₹{prediction:.2f}")
-
-pip install streamlit scikit-learn pandas joblib
